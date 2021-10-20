@@ -117,9 +117,22 @@ export class LoginForm extends Component {
             <p> Don't have an account ?</p>
           </Col>
           <Col>
-            <a href="#" onClick={() => this.props.frmSwitcher("reset")}>
-              <p>Register Here</p>
-            </a>
+            <button
+              type="button"
+              style={{
+                backgroundColor: "transparent",
+                color: "blue",
+                border: "none",
+                cursor: "pointer",
+                textDecoration: "underline",
+                display: "inline",
+                margin: 0,
+                padding: 0,
+              }}
+              onClick={() => this.props.frmSwitcher("reset")}
+            >
+              Register Here
+            </button>
           </Col>
         </Row>
       </Container>
