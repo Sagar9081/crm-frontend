@@ -158,9 +158,22 @@ export class Register extends React.Component {
                 <p>Already Register ?</p>
               </Col>
               <Col>
-                <a href="#" onClick={() => this.props.frmSwitcher("login")}>
+                 <button
+                  type="button"
+                  style={{
+                    backgroundColor: "transparent",
+                    color: "blue",
+                    border: "none",
+                    cursor: "pointer",
+                    textDecoration: "underline",
+                    display: "inline",
+                    margin: 0,
+                    padding: 0,
+                  }}
+                  onClick={() => this.props.frmSwitcher("login")}
+                >
                   Log in now
-                </a>
+                </button>
               </Col>
             </Row>
           </Form>
